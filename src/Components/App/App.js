@@ -3,6 +3,8 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import MainList from '../MainList/MainList';
+import SearchResultsFB from '../SearchResultsFB/SearchResultsFB';
+import SearchResultsIN from '../SearchResultsIN/SearchResultsIN';
 
 
 class App extends React.Component {
@@ -67,6 +69,14 @@ class App extends React.Component {
           <SearchBar onSearch={this.search} />
           <div className="App-mainlist">
             <SearchResults
+              searchResults={this.state.searchResults}
+              onAdd={this.addItem}
+            />
+            <SearchResultsFB
+              searchResults={this.state.searchResults}
+              onAdd={this.addItem}
+            />
+            <SearchResultsIN
               searchResults={this.state.searchResults}
               onAdd={this.addItem}
             />

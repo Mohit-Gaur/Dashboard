@@ -19,7 +19,6 @@ class MainList extends React.Component {
           onChange={this.handleNameChange}
         />
 
-        <a className="Mainlist-save" onClick={this.props.onSave}>A Button</a>
       </div>
     );
   }
