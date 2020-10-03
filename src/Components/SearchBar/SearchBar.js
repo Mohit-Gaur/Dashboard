@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
     return (
       <div className="SearchBar">
         <input
-          placeholder="Enter the details to search"
+          placeholder="Search IDs here"
           onChange={this.handleTermChange}
         />
         <a onClick={this.search}>SEARCH</a>
