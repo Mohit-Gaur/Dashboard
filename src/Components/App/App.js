@@ -12,7 +12,7 @@ const App = () => {
   const [searchResults, setSearchResults] = useState('');
   const [searchResultsFB, setSearchResultsFB] = useState('');
   const [searchResultsIN, setSearchResultsIN] = useState('');
-  const [mainlistName, setMainlistName] = useState('');
+  const [mainlistName, setMainlistName] = useState('Analysis');
   const [mainlistItems, setMainlistItems] = useState('');
 
   async function handleSearchSubmit(event) {
